@@ -1,5 +1,7 @@
 # Select Multiple Items With Sort (AngularJS)
 
+### [Demo](http://birdcon.com/github/bird-select/demo/)
+
 Installation
 ------------
 
