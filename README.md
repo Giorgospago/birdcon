@@ -4,9 +4,10 @@ Installation
 ------------
 
 ```html
+<!-- Add the CSS -->
 <link href="css/angular-select-multiple.css" rel="stylesheet" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<!-- Add the JavaScript -->
 <script src="js/angular-select-multiple.js"></script>
 ```
 
