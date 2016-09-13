@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Select Multiple</title>
+    <link href="../src/css/angular-select-multiple.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  </head>
+  <body ng-controller="MainController">
+    <form action="">
+      <bird-select ng-name="nodes" ng-placeholder="Αναζήτηση Nodes..." ng-list="list" ng-model="my_first_list"></bird-select>
+
+      <br/>
+
+      <bird-select ng-name="nodes2" ng-placeholder="Nodes από URL..." ng-list-url="ajax/sample.json" ng-model="my_second_list"></bird-select>
+
+      <br/>
+
+      <input type="submit"/>
+    </form>
+
+    <br>
+    <br>
+
+    <pre>
+$scope.my_first_list = {{ my_first_list | json }}
+
+$scope.my_second_list = {{ my_second_list | json }}
+    </pre>
+
+    <script src="../src/js/angular-select-multiple.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

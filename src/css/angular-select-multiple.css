@@ -1,0 +1,83 @@
+.magic-select-container{
+  position:relative;
+  border-radius:3px;
+  box-shadow:0px 2px 10px -1px rgba(0,0,0,0.4);
+  display:inline-block;
+  vertical-align:top;
+  background-color:#fff;
+  padding:3px;
+  margin:10px 10px 20px;
+  font-size:14px;
+  font-family:arial;
+}
+.magic-select-search{
+  position:relative;
+  display:inline-block;
+  background-color:#fff;
+  padding:6px 6px;
+  border:none;
+  outline:none;
+  border-bottom:solid 1px transparent;
+  transition:all 0.3s ease-in-out;
+  margin-bottom: 5px;
+  width: calc( 100% - 12px);
+}
+.magic-select-search:focus{
+  border-bottom:solid 1px #2196F3;
+}
+
+.magic-selected-list{
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+.magic-selected-list li{
+  padding: 2px 22px 1px 6px;
+  cursor: move;
+  display: inline-block;
+  color: #fff;
+  background-color: #2196F3;
+  border-radius: 3px;
+  margin: 2px;
+  position:relative;
+  width:auto;
+}
+.magic-selected-list li .magic-selected-remove{
+  background-color: #4381e8;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 16px;
+  border-radius: 0px 3px 3px 0;
+  cursor:pointer;
+  transition:all 0.2s ease-in-out;
+  text-align:center;
+  font-size:12px;
+  line-height: 18px;
+  z-index:1;
+}
+.magic-selected-list li .magic-selected-remove:hover{
+  background-color: #3F51B5;
+}
+
+.magic-select-result-list{
+  padding:0;
+  margin:0;
+  list-style: none;
+  overflow:hidden;
+  overflow-y: auto;
+  max-height: 400px;
+}
+.magic-select-result-list li{
+  margin:0;
+  padding:3px;
+  cursor:pointer;
+}
+.magic-select-result-list li:nth-child(even) {
+    background-color: #f5f5f5;
+}
+.magic-select-result-list li:hover{
+  color:#fff;
+  background-color:#2196F3;
+}
