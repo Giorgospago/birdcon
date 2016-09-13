@@ -1,2 +1,2 @@
-# Angular Select Multiple Items With Sort
+# Select Multiple Items With Sort (AngularJS)
 Description
